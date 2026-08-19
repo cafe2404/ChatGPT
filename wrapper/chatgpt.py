@@ -34,265 +34,53 @@ class ChatGPT:
             "_reactListening" + self._generate_react(),
         ]
         self.window_keys: list = [
-            "0",
-            "window",
-            "self",
-            "document",
-            "name",
-            "location",
-            "customElements",
-            "history",
-            "navigation",
-            "locationbar",
-            "menubar",
-            "personalbar",
-            "scrollbars",
-            "statusbar",
-            "toolbar",
-            "status",
-            "closed",
-            "frames",
-            "length",
-            "top",
-            "opener",
-            "parent",
-            "frameElement",
-            "navigator",
-            "origin",
-            "external",
-            "screen",
-            "innerWidth",
-            "innerHeight",
-            "scrollX",
-            "pageXOffset",
-            "scrollY",
-            "pageYOffset",
-            "visualViewport",
-            "screenX",
-            "screenY",
-            "outerWidth",
-            "outerHeight",
-            "devicePixelRatio",
-            "event",
-            "clientInformation",
-            "screenLeft",
-            "screenTop",
-            "styleMedia",
-            "onsearch",
-            "trustedTypes",
-            "performance",
-            "onappinstalled",
-            "onbeforeinstallprompt",
-            "crypto",
-            "indexedDB",
-            "sessionStorage",
-            "localStorage",
-            "onbeforexrselect",
-            "onabort",
-            "onbeforeinput",
-            "onbeforematch",
-            "onbeforetoggle",
-            "onblur",
-            "oncancel",
-            "oncanplay",
-            "oncanplaythrough",
-            "onchange",
-            "onclick",
-            "onclose",
-            "oncontentvisibilityautostatechange",
-            "oncontextlost",
-            "oncontextmenu",
-            "oncontextrestored",
-            "oncuechange",
-            "ondblclick",
-            "ondrag",
-            "ondragend",
-            "ondragenter",
-            "ondragleave",
-            "ondragover",
-            "ondragstart",
-            "ondrop",
-            "ondurationchange",
-            "onemptied",
-            "onended",
-            "onerror",
-            "onfocus",
-            "onformdata",
-            "oninput",
-            "oninvalid",
-            "onkeydown",
-            "onkeypress",
-            "onkeyup",
-            "onload",
-            "onloadeddata",
-            "onloadedmetadata",
-            "onloadstart",
-            "onmousedown",
-            "onmouseenter",
-            "onmouseleave",
-            "onmousemove",
-            "onmouseout",
-            "onmouseover",
-            "onmouseup",
-            "onmousewheel",
-            "onpause",
-            "onplay",
-            "onplaying",
-            "onprogress",
-            "onratechange",
-            "onreset",
-            "onresize",
-            "onscroll",
-            "onsecuritypolicyviolation",
-            "onseeked",
-            "onseeking",
-            "onselect",
-            "onslotchange",
-            "onstalled",
-            "onsubmit",
-            "onsuspend",
-            "ontimeupdate",
-            "ontoggle",
-            "onvolumechange",
-            "onwaiting",
-            "onwebkitanimationend",
-            "onwebkitanimationiteration",
-            "onwebkitanimationstart",
-            "onwebkittransitionend",
-            "onwheel",
-            "onauxclick",
-            "ongotpointercapture",
-            "onlostpointercapture",
-            "onpointerdown",
-            "onpointermove",
-            "onpointerrawupdate",
-            "onpointerup",
-            "onpointercancel",
-            "onpointerover",
-            "onpointerout",
-            "onpointerenter",
-            "onpointerleave",
-            "onselectstart",
-            "onselectionchange",
-            "onanimationend",
-            "onanimationiteration",
-            "onanimationstart",
-            "ontransitionrun",
-            "ontransitionstart",
-            "ontransitionend",
-            "ontransitioncancel",
-            "onafterprint",
-            "onbeforeprint",
-            "onbeforeunload",
-            "onhashchange",
-            "onlanguagechange",
-            "onmessage",
-            "onmessageerror",
-            "onoffline",
-            "ononline",
-            "onpagehide",
-            "onpageshow",
-            "onpopstate",
-            "onrejectionhandled",
-            "onstorage",
-            "onunhandledrejection",
-            "onunload",
-            "isSecureContext",
-            "crossOriginIsolated",
-            "scheduler",
-            "alert",
-            "atob",
-            "blur",
-            "btoa",
-            "cancelAnimationFrame",
-            "cancelIdleCallback",
-            "captureEvents",
-            "clearInterval",
-            "clearTimeout",
-            "close",
-            "confirm",
-            "createImageBitmap",
-            "fetch",
-            "find",
-            "focus",
-            "getComputedStyle",
-            "getSelection",
-            "matchMedia",
-            "moveBy",
-            "moveTo",
-            "open",
-            "postMessage",
-            "print",
-            "prompt",
-            "queueMicrotask",
-            "releaseEvents",
-            "reportError",
-            "requestAnimationFrame",
-            "requestIdleCallback",
-            "resizeBy",
-            "resizeTo",
-            "scroll",
-            "scrollBy",
-            "scrollTo",
-            "setInterval",
-            "setTimeout",
-            "stop",
-            "structuredClone",
-            "webkitCancelAnimationFrame",
-            "webkitRequestAnimationFrame",
-            "chrome",
-            "caches",
-            "cookieStore",
-            "ondevicemotion",
-            "ondeviceorientation",
-            "ondeviceorientationabsolute",
-            "sharedStorage",
-            "documentPictureInPicture",
-            "fetchLater",
-            "getScreenDetails",
-            "queryLocalFonts",
-            "showDirectoryPicker",
-            "showOpenFilePicker",
-            "showSaveFilePicker",
-            "originAgentCluster",
-            "viewport",
-            "onpageswap",
-            "onpagereveal",
-            "credentialless",
-            "fence",
-            "launchQueue",
-            "speechSynthesis",
-            "oncommand",
-            "onscrollend",
-            "onscrollsnapchange",
-            "onscrollsnapchanging",
-            "webkitRequestFileSystem",
-            "webkitResolveLocalFileSystemURL",
-            "define",
-            "ethereum",
-            "__oai_SSR_HTML",
-            "__reactRouterContext",
-            "$RC",
-            "__oai_SSR_TTI",
-            "__reactRouterManifest",
-            "__reactRouterVersion",
-            "DD_RUM",
-            "__REACT_INTL_CONTEXT__",
-            "regeneratorRuntime",
-            "DD_LOGS",
-            "__STATSIG__",
-            "__mobxInstanceCount",
-            "__mobxGlobals",
-            "_g",
-            "__reactRouterRouteModules",
-            "__SEGMENT_INSPECTOR__",
-            "__reactRouterDataRouter",
-            "MotionIsMounted",
-            "_oaiHandleSessionExpired",
+            "0", "window", "self", "document", "name", "location", "customElements",
+            "history", "navigation", "locationbar", "menubar", "personalbar", "scrollbars",
+            "statusbar", "toolbar", "status", "closed", "frames", "length", "top", "opener",
+            "parent", "frameElement", "navigator", "origin", "external", "screen", "innerWidth",
+            "innerHeight", "scrollX", "pageXOffset", "scrollY", "pageYOffset", "visualViewport",
+            "screenX", "screenY", "outerWidth", "outerHeight", "devicePixelRatio", "event",
+            "clientInformation", "screenLeft", "screenTop", "styleMedia", "onsearch", "trustedTypes",
+            "performance", "onappinstalled", "onbeforeinstallprompt", "crypto", "indexedDB",
+            "sessionStorage", "localStorage", "onbeforexrselect", "onabort", "onbeforeinput",
+            "onbeforematch", "onbeforetoggle", "onblur", "oncancel", "oncanplay", "oncanplaythrough",
+            "onchange", "onclick", "onclose", "oncontentvisibilityautostatechange", "oncontextlost",
+            "oncontextmenu", "oncontextrestored", "oncuechange", "ondblclick", "ondrag", "ondragend",
+            "ondragenter", "ondragleave", "ondragover", "ondragstart", "ondrop", "ondurationchange",
+            "onemptied", "onended", "onerror", "onfocus", "onformdata", "oninput", "oninvalid",
+            "onkeydown", "onkeypress", "onkeyup", "onload", "onloadeddata", "onloadedmetadata",
+            "onloadstart", "onmousedown", "onmouseenter", "onmouseleave", "onmousemove", "onmouseout",
+            "onmouseover", "onmouseup", "onmousewheel", "onpause", "onplay", "onplaying", "onprogress",
+            "onratechange", "onreset", "onresize", "onscroll", "onsecuritypolicyviolation", "onseeked",
+            "onseeking", "onselect", "onslotchange", "onstalled", "onsubmit", "onsuspend", "ontimeupdate",
+            "ontoggle", "onvolumechange", "onwaiting", "onwebkitanimationend", "onwebkitanimationiteration",
+            "onwebkitanimationstart", "onwebkittransitionend", "onwheel", "onauxclick", "ongotpointercapture",
+            "onlostpointercapture", "onpointerdown", "onpointermove", "onpointerrawupdate", "onpointerup",
+            "onpointercancel", "onpointerover", "onpointerout", "onpointerenter", "onpointerleave",
+            "onselectstart", "onselectionchange", "onanimationend", "onanimationiteration", "onanimationstart",
+            "ontransitionrun", "ontransitionstart", "ontransitionend", "ontransitioncancel", "onafterprint",
+            "onbeforeprint", "onbeforeunload", "onhashchange", "onlanguagechange", "onmessage", "onmessageerror",
+            "onoffline", "ononline", "onpagehide", "onpageshow", "onpopstate", "onrejectionhandled", "onstorage",
+            "onunhandledrejection", "onunload", "isSecureContext", "crossOriginIsolated", "scheduler", "alert",
+            "atob", "blur", "btoa", "cancelAnimationFrame", "cancelIdleCallback", "captureEvents",
+            "clearInterval", "clearTimeout", "close", "confirm", "createImageBitmap", "fetch", "find", "focus",
+            "getComputedStyle", "getSelection", "matchMedia", "moveBy", "moveTo", "open", "postMessage", "print",
+            "prompt", "queueMicrotask", "releaseEvents", "reportError", "requestAnimationFrame", "requestIdleCallback",
+            "resizeBy", "resizeTo", "scroll", "scrollBy", "scrollTo", "setInterval", "setTimeout", "stop",
+            "structuredClone", "webkitCancelAnimationFrame", "webkitRequestAnimationFrame", "chrome", "caches",
+            "cookieStore", "ondevicemotion", "ondeviceorientation", "ondeviceorientationabsolute", "sharedStorage",
+            "documentPictureInPicture", "fetchLater", "getScreenDetails", "queryLocalFonts", "showDirectoryPicker",
+            "showOpenFilePicker", "showSaveFilePicker", "originAgentCluster", "viewport", "onpageswap", "onpagereveal",
+            "credentialless", "fence", "launchQueue", "speechSynthesis", "oncommand", "onscrollend", "onscrollsnapchange",
+            "onscrollsnapchanging", "webkitRequestFileSystem", "webkitResolveLocalFileSystemURL", "define", "ethereum",
+            "__oai_SSR_HTML", "__reactRouterContext", "$RC", "__oai_SSR_TTI", "__oai_SSR_TTI", "__oai_SSR_TTI",
+            "__oai_SSR_TTI", "__oai_SSR_TTI", "__oai_SSR_TTI", "__reactRouterManifest", "__reactRouterVersion",
+            "DD_RUM", "__REACT_INTL_CONTEXT__", "regeneratorRuntime", "DD_LOGS", "__STATSIG__", "__mobxInstanceCount",
+            "__mobxGlobals", "_g", "__reactRouterRouteModules", "__SEGMENT_INSPECTOR__", "__reactRouterDataRouter",
+            "MotionIsMounted", "_oaiHandleSessionExpired",
         ]
         self.session.cookies.update(cookies)
         self._fetch_cookies()
-
 
     def _generate_react(self) -> str:
         n = random()
@@ -305,46 +93,73 @@ class ChatGPT:
         return base36
 
     def _parse_event_stream(self, stream_data: str) -> str:
-        result: list = []
-        lines: list = stream_data.strip().split("\n")
+        """Extract assistant text deltas from the current ChatGPT SSE stream.
 
-        for line in lines:
-            if line.startswith("data:"):
+        ChatGPT Web emits many `data:` records that are not assistant text:
+        input_message, system/developer messages, markers, metadata, etc.
+        Only JSON patch operations targeting /message/content/parts/0 are
+        considered text. This also handles patch batches and safely ignores
+        malformed/non-JSON SSE records.
+        """
+        result: list[str] = []
 
-                data_str: str = line[5:].strip()
+        for raw_line in stream_data.splitlines():
+            line = raw_line.strip()
+            if not line.startswith("data:"):
+                continue
 
-                if data_str == "[DONE]":
-                    break
+            data_str = line[5:].strip()
+            if not data_str:
+                continue
+            if data_str == "[DONE]":
+                break
 
-                data: dict = loads(data_str)
+            try:
+                data = loads(data_str)
+            except (TypeError, ValueError):
+                continue
 
-                if isinstance(data, dict):
+            if not isinstance(data, dict):
+                continue
 
+            # Ignore non-delta/internal events. In particular, current Web
+            # responses contain developer/user `input_message` records.
+            event_type = data.get("type")
+            if event_type in {
+                "input_message",
+                "resume_conversation_token",
+                "message_marker",
+                "server_ste_metadata",
+                "message_stream_complete",
+                "conversation_detail_metadata",
+            }:
+                continue
+
+            # A direct RFC6902-style delta:
+            # {"p":"/message/content/parts/0","o":"append","v":"..."}
+            if (
+                data.get("o") == "append"
+                and data.get("p") == "/message/content/parts/0"
+                and isinstance(data.get("v"), str)
+            ):
+                result.append(data["v"])
+                continue
+
+            # A patch containing one or more operations.
+            if data.get("o") == "patch" and isinstance(data.get("v"), list):
+                for operation in data["v"]:
+                    if not isinstance(operation, dict):
+                        continue
                     if (
-                        data.get("o") == "append"
-                        and data.get("p") == "/message/content/parts/0"
+                        operation.get("o") == "append"
+                        and operation.get("p") == "/message/content/parts/0"
+                        and isinstance(operation.get("v"), str)
                     ):
+                        result.append(operation["v"])
 
-                        result.append(data.get("v"))
-
-                    elif data.get("o") == "patch" and isinstance(data.get("v"), list):
-
-                        for op in data.get("v"):
-
-                            if (
-                                op.get("o") == "append"
-                                and op.get("p") == "/message/content/parts/0"
-                            ):
-
-                                result.append(op.get("v"))
-
-                    elif "v" in data and isinstance(data["v"], str):
-                        result.append(data["v"])
-
-        return ("".join(result)).replace("\n", "")
+        return "".join(result)
 
     def _fetch_cookies(self) -> None:
-
         load_site: requests.models.Response = self.session.get("https://chatgpt.com")
         self.session.cookies.update(load_site.cookies)
         self.data["prod"] = load_site.text.split('data-build="')[1].split('"')[0]
@@ -377,7 +192,6 @@ class ChatGPT:
         ]
 
     def _get_tokens(self, process_time: int = randint(1400, 2000)) -> None:
-
         self.session.headers = Headers.REQUIREMENTS
         self.session.headers.update(
             {
@@ -412,10 +226,7 @@ class ChatGPT:
             self.start_time,
         ]
 
-        requirements_data: dict = {
-            "p": p_value,
-        }
-
+        requirements_data: dict = {"p": p_value}
         requirements_request: requests.models.Response = self.session.post(
             "https://chatgpt.com/backend-anon/sentinel/chat-requirements",
             json=requirements_data,
@@ -424,10 +235,7 @@ class ChatGPT:
         if requirements_request.status_code == 200:
             self.data["token"] = requirements_request.json().get("token")
             self.data["proofofwork"] = requirements_request.json().get("proofofwork")
-            self.data["bytecode"] = (
-                requirements_request.json().get("turnstile").get("dx")
-            )
-
+            self.data["bytecode"] = requirements_request.json().get("turnstile").get("dx")
         else:
             Log.Error("Something went wrong while fetching chat requirements")
 
@@ -442,41 +250,19 @@ class ChatGPT:
 
         if not next:
             post_data: dict = {
-                "action": "next",
-                "fork_from_shared_post": False,
-                "parent_message_id": "client-created-root",
-                "model": "auto",
-                "timezone_offset_min": self.timezone_offset,
-                "timezone": self.ip_info[5],
-                "history_and_training_disabled": True,
-                "conversation_mode": {
-                    "kind": "primary_assistant",
-                },
-                "system_hints": [],
-                "supports_buffering": True,
-                "supported_encodings": [
-                    "v1",
-                ],
+                "action": "next", "fork_from_shared_post": False,
+                "parent_message_id": "client-created-root", "model": "auto",
+                "timezone_offset_min": self.timezone_offset, "timezone": self.ip_info[5],
+                "history_and_training_disabled": True, "conversation_mode": {"kind": "primary_assistant"},
+                "system_hints": [], "supports_buffering": True, "supported_encodings": ["v1"],
             }
-
         else:
             post_data: dict = {
-                "action": "next",
-                "fork_from_shared_post": False,
-                "conversation_id": self.data["conversation_id"],
-                "parent_message_id": self.data["parent_message_id"],
-                "model": "auto",
-                "timezone_offset_min": self.timezone_offset,
-                "timezone": self.ip_info[5],
-                "history_and_training_disabled": True,
-                "conversation_mode": {
-                    "kind": "primary_assistant",
-                },
-                "system_hints": [],
-                "supports_buffering": True,
-                "supported_encodings": [
-                    "v1",
-                ],
+                "action": "next", "fork_from_shared_post": False,
+                "conversation_id": self.data["conversation_id"], "parent_message_id": self.data["parent_message_id"],
+                "model": "auto", "timezone_offset_min": self.timezone_offset, "timezone": self.ip_info[5],
+                "history_and_training_disabled": True, "conversation_mode": {"kind": "primary_assistant"},
+                "system_hints": [], "supports_buffering": True, "supported_encodings": ["v1"],
             }
 
         conduit_request: requests.models.Response = self.session.post(
@@ -486,10 +272,9 @@ class ChatGPT:
         if '"status":"ok"' in conduit_request.text:
             return conduit_request.json().get("conduit_token")
 
-        else:
-            Log.Error("Something went wrong while fetching conduit token: ")
-            Log.Error(conduit_request.text)
-            return None
+        Log.Error("Something went wrong while fetching conduit token: ")
+        Log.Error(conduit_request.text)
+        return None
 
     def start_conversation(self, message: str) -> None:
         self._get_tokens()
@@ -497,9 +282,7 @@ class ChatGPT:
 
         time_1: int = randint(6000, 9000)
         proof_token: str = Challenges.solve_pow(
-            self.data["proofofwork"]["seed"],
-            self.data["proofofwork"]["difficulty"],
-            self.data["config"],
+            self.data["proofofwork"]["seed"], self.data["proofofwork"]["difficulty"], self.data["config"]
         )
         Log.Success(f"Solved POW: {proof_token}")
         turnstile_token: str = VM.get_turnstile(
@@ -509,8 +292,7 @@ class ChatGPT:
         self.session.headers = Headers.CONVERSATION
         self.session.headers.update(
             {
-                "oai-client-version": self.data["prod"],
-                "oai-device-id": self.data["device-id"],
+                "oai-client-version": self.data["prod"], "oai-device-id": self.data["device-id"],
                 "oai-echo-logs": f"0,{time_1},1,{time_1 + randint(1000, 1200)}",
                 "openai-sentinel-chat-requirements-token": self.data["token"],
                 "openai-sentinel-proof-token": proof_token,
@@ -520,54 +302,21 @@ class ChatGPT:
         )
 
         conversation_data: dict = {
-            "action": "next",
-            "messages": [
-                {
-                    "id": str(uuid4()),
-                    "author": {
-                        "role": "user",
-                    },
-                    "create_time": round(time(), 3),
-                    "content": {
-                        "content_type": "text",
-                        "parts": [
-                            message,
-                        ],
-                    },
-                    "metadata": {
-                        "selected_github_repos": [],
-                        "selected_all_github_repos": False,
-                        "serialization_metadata": {
-                            "custom_symbol_offsets": [],
-                        },
-                    },
-                },
-            ],
-            "parent_message_id": "client-created-root",
-            "model": "auto",
-            "timezone_offset_min": self.timezone_offset,
-            "timezone": self.ip_info[5],
-            "history_and_training_disabled": True,
-            "conversation_mode": {
-                "kind": "primary_assistant",
-            },
-            "enable_message_followups": True,
-            "system_hints": [],
-            "supports_buffering": True,
-            "supported_encodings": [
-                "v1",
-            ],
-            "client_contextual_info": {
-                "is_dark_mode": True,
-                "time_since_loaded": randint(3, 6),
-                "page_height": 1219,
-                "page_width": 3440,
-                "pixel_ratio": 1,
-                "screen_height": 1440,
-                "screen_width": 3440,
-            },
-            "paragen_cot_summary_display_override": "allow",
-            "force_parallel_switch": "auto",
+            "action": "next", "messages": [{
+                "id": str(uuid4()), "author": {"role": "user"}, "create_time": round(time(), 3),
+                "content": {"content_type": "text", "parts": [message]},
+                "metadata": {"selected_github_repos": [], "selected_all_github_repos": False,
+                              "serialization_metadata": {"custom_symbol_offsets": []}},
+            }],
+            "parent_message_id": "client-created-root", "model": "auto",
+            "timezone_offset_min": self.timezone_offset, "timezone": self.ip_info[5],
+            "history_and_training_disabled": True, "conversation_mode": {"kind": "primary_assistant"},
+            "enable_message_followups": True, "system_hints": [], "supports_buffering": True,
+            "supported_encodings": ["v1"],
+            "client_contextual_info": {"is_dark_mode": True, "time_since_loaded": randint(3, 6),
+                                       "page_height": 1219, "page_width": 3440, "pixel_ratio": 1,
+                                       "screen_height": 1440, "screen_width": 3440},
+            "paragen_cot_summary_display_override": "allow", "force_parallel_switch": "auto",
         }
 
         conversation_request: requests.models.Response = self.session.post(
@@ -579,307 +328,120 @@ class ChatGPT:
             Log.Error("Your IP got flagged by chatgpt, retry with a new IP")
             exit(conversation_request.status_code)
 
-        self.data["conversation_id"] = Utils.between(
-            conversation_request.text, '"conversation_id": "', '"'
-        )
-        self.data["parent_message_id"] = Utils.between(
-            conversation_request.text, '"message_id": "', '"'
-        )
+        self.data["conversation_id"] = Utils.between(conversation_request.text, '"conversation_id": "', '"')
+        self.data["parent_message_id"] = Utils.between(conversation_request.text, '"message_id": "', '"')
         self.response = self._parse_event_stream(conversation_request.text)
 
     def upload_image(self, image: str) -> None:
-
         self.session.headers = Headers.REQUIREMENTS
-        self.session.headers.update(
-            {
-                "oai-client-version": self.data["prod"],
-                "oai-device-id": self.data["device-id"],
-            }
-        )
-
+        self.session.headers.update({"oai-client-version": self.data["prod"], "oai-device-id": self.data["device-id"]})
         self.file_name: str = str(uuid4())
-
         if image.startswith("data:image"):
             image = image.split(",")[1]
-
         self.file_size: int = len(b64decode(image))
         self.width, self.height = Image.open(BytesIO(b64decode(image))).size
-
-        image_data: dict = {
-            "file_name": f"{self.file_name}.png",
-            "file_size": self.file_size,
-            "use_case": "multimodal",
-            "timezone_offset_min": self.timezone_offset,
-            "reset_rate_limits": False,
-        }
-        file_request: requests.models.Response = self.session.post(
-            "https://chatgpt.com/backend-anon/files", json=image_data
-        )
-
+        image_data: dict = {"file_name": f"{self.file_name}.png", "file_size": self.file_size,
+                            "use_case": "multimodal", "timezone_offset_min": self.timezone_offset, "reset_rate_limits": False}
+        file_request: requests.models.Response = self.session.post("https://chatgpt.com/backend-anon/files", json=image_data)
         self.data["file_id"] = file_request.json().get("file_id")
         upload_url: str = file_request.json().get("upload_url")
-
         self.session.headers = Headers.FILE
-        upload_request: requests.models.Response = self.session.put(
-            upload_url, data=b64decode(image)
-        )
-
+        self.session.put(upload_url, data=b64decode(image))
         self.session.headers = Headers.REQUIREMENTS
-        self.session.headers.update(
-            {
-                "oai-client-version": self.data["prod"],
-                "oai-device-id": self.data["device-id"],
-            }
-        )
-
-        process_data: dict = {
-            "file_id": self.data["file_id"],
-            "use_case": "multimodal",
-            "index_for_retrieval": False,
-            "file_name": f"{self.file_name}.png",
-        }
-
+        self.session.headers.update({"oai-client-version": self.data["prod"], "oai-device-id": self.data["device-id"]})
+        process_data: dict = {"file_id": self.data["file_id"], "use_case": "multimodal", "index_for_retrieval": False,
+                              "file_name": f"{self.file_name}.png"}
         process_request: requests.models.Response = self.session.post(
-            "https://chatgpt.com/backend-anon/files/process_upload_stream",
-            json=process_data,
+            "https://chatgpt.com/backend-anon/files/process_upload_stream", json=process_data
         )
-
         if "Succeeded processing " in process_request.text:
             return
-        else:
-            Log.Error("Something went wrong while uploading image")
+        Log.Error("Something went wrong while uploading image")
 
     def start_with_image(self, message: str, image: str) -> None:
-
         self._get_tokens()
         conduit_token: str = self.get_conduit()
         self.upload_image(image)
-
         time_1: int = randint(6000, 9000)
-        proof_token: str = Challenges.solve_pow(
-            self.data["proofofwork"]["seed"],
-            self.data["proofofwork"]["difficulty"],
-            self.data["config"],
-        )
-
-        turnstile_token: str = VM.get_turnstile(
-            self.data["bytecode"], self.data["vm_token"], str(self.ip_info[:-1])
-        )
-
+        proof_token: str = Challenges.solve_pow(self.data["proofofwork"]["seed"], self.data["proofofwork"]["difficulty"], self.data["config"])
+        turnstile_token: str = VM.get_turnstile(self.data["bytecode"], self.data["vm_token"], str(self.ip_info[:-1]))
         self.session.headers = Headers.CONVERSATION
-        self.session.headers.update(
-            {
-                "oai-client-version": self.data["prod"],
-                "oai-device-id": self.data["device-id"],
-                "oai-echo-logs": f"0,{time_1},1,{time_1 + randint(1000, 1200)}",
-                "openai-sentinel-chat-requirements-token": self.data["token"],
-                "openai-sentinel-proof-token": proof_token,
-                "openai-sentinel-turnstile-token": turnstile_token,
-                "x-conduit-token": conduit_token,
-            }
-        )
-
+        self.session.headers.update({"oai-client-version": self.data["prod"], "oai-device-id": self.data["device-id"],
+                                     "oai-echo-logs": f"0,{time_1},1,{time_1 + randint(1000, 1200)}",
+                                     "openai-sentinel-chat-requirements-token": self.data["token"],
+                                     "openai-sentinel-proof-token": proof_token, "openai-sentinel-turnstile-token": turnstile_token,
+                                     "x-conduit-token": conduit_token})
         conversation_data: dict = {
-            "action": "next",
-            "messages": [
-                {
-                    "id": str(uuid4()),
-                    "author": {
-                        "role": "user",
-                    },
-                    "create_time": round(time(), 3),
-                    "content": {
-                        "content_type": "multimodal_text",
-                        "parts": [
-                            {
-                                "content_type": "image_asset_pointer",
-                                "asset_pointer": f'file-service://{self.data["file_id"]}',
-                                "size_bytes": self.file_size,
-                                "width": self.width,
-                                "height": self.height,
-                            },
-                            message,
-                        ],
-                    },
-                    "metadata": {
-                        "attachments": [
-                            {
-                                "id": self.data["file_id"],
-                                "size": self.file_size,
-                                "name": f"{self.file_name}.png",
-                                "mime_type": "image/png",
-                                "width": self.width,
-                                "height": self.height,
-                                "source": "local",
-                            },
-                        ],
-                        "selected_github_repos": [],
-                        "selected_all_github_repos": False,
-                        "serialization_metadata": {
-                            "custom_symbol_offsets": [],
-                        },
-                    },
-                },
-            ],
-            "parent_message_id": "client-created-root",
-            "model": "auto",
-            "timezone_offset_min": self.timezone_offset,
-            "timezone": self.ip_info[5],
-            "history_and_training_disabled": True,
-            "conversation_mode": {
-                "kind": "primary_assistant",
-            },
-            "enable_message_followups": True,
-            "system_hints": [],
-            "supports_buffering": True,
-            "supported_encodings": [
-                "v1",
-            ],
-            "client_contextual_info": {
-                "is_dark_mode": True,
-                "time_since_loaded": randint(3, 6),
-                "page_height": 1219,
-                "page_width": 3440,
-                "pixel_ratio": 1,
-                "screen_height": 1440,
-                "screen_width": 3440,
-            },
-            "paragen_cot_summary_display_override": "allow",
-            "force_parallel_switch": "auto",
+            "action": "next", "messages": [{"id": str(uuid4()), "author": {"role": "user"}, "create_time": round(time(), 3),
+                "content": {"content_type": "multimodal_text", "parts": [{"content_type": "image_asset_pointer",
+                    "asset_pointer": f'file-service://{self.data["file_id"]}', "size_bytes": self.file_size,
+                    "width": self.width, "height": self.height}, message]},
+                "metadata": {"attachments": [{"id": self.data["file_id"], "size": self.file_size, "name": f"{self.file_name}.png",
+                    "mime_type": "image/png", "width": self.width, "height": self.height, "source": "local"}],
+                    "selected_github_repos": [], "selected_all_github_repos": False,
+                    "serialization_metadata": {"custom_symbol_offsets": []}}}],
+            "parent_message_id": "client-created-root", "model": "auto", "timezone_offset_min": self.timezone_offset,
+            "timezone": self.ip_info[5], "history_and_training_disabled": True,
+            "conversation_mode": {"kind": "primary_assistant"}, "enable_message_followups": True, "system_hints": [],
+            "supports_buffering": True, "supported_encodings": ["v1"],
+            "client_contextual_info": {"is_dark_mode": True, "time_since_loaded": randint(3, 6), "page_height": 1219,
+                "page_width": 3440, "pixel_ratio": 1, "screen_height": 1440, "screen_width": 3440},
+            "paragen_cot_summary_display_override": "allow", "force_parallel_switch": "auto",
         }
-
-        conversation_request: requests.models.Response = self.session.post(
-            "https://chatgpt.com/backend-anon/f/conversation", json=conversation_data
-        )
+        conversation_request: requests.models.Response = self.session.post("https://chatgpt.com/backend-anon/f/conversation", json=conversation_data)
         self.session.cookies.update(conversation_request.cookies)
-
         if "Unusual activity" in conversation_request.text:
             Log.Error("Your IP got flagged by chatgpt, retry with a new IP")
             exit(conversation_request.status_code)
-
-        self.data["conversation_id"] = Utils.between(
-            conversation_request.text, '"conversation_id": "', '"'
-        )
-        self.data["parent_message_id"] = Utils.between(
-            conversation_request.text, '"message_id": "', '"'
-        )
+        self.data["conversation_id"] = Utils.between(conversation_request.text, '"conversation_id": "', '"')
+        self.data["parent_message_id"] = Utils.between(conversation_request.text, '"message_id": "', '"')
         self.response = self._parse_event_stream(conversation_request.text)
 
     def hold_conversation(self, message: str, new: bool = True) -> None:
         self.index = 2000
-
         if new:
             self.start_conversation(message)
-
         conduit_token: str = self.get_conduit(next=True)
-
         self._get_tokens(randint(self.index, self.index + 1000))
         self.index += 3000
-
         time_1: int = randint(self.index, self.index + 3000)
-        proof_token: str = Challenges.solve_pow(
-            self.data["proofofwork"]["seed"],
-            self.data["proofofwork"]["difficulty"],
-            self.data["config"],
-        )
-
-        turnstile_token: str = VM.get_turnstile(
-            self.data["bytecode"], self.data["vm_token"], str(self.ip_info[:-1])
-        )
-
+        proof_token: str = Challenges.solve_pow(self.data["proofofwork"]["seed"], self.data["proofofwork"]["difficulty"], self.data["config"])
+        turnstile_token: str = VM.get_turnstile(self.data["bytecode"], self.data["vm_token"], str(self.ip_info[:-1]))
         self.session.headers = Headers.CONVERSATION
-        self.session.headers.update(
-            {
-                "oai-client-version": self.data["prod"],
-                "oai-device-id": self.data["device-id"],
-                "oai-echo-logs": f"0,{time_1},1,{time_1 + randint(1000, 1200)}",
-                "openai-sentinel-chat-requirements-token": self.data["token"],
-                "openai-sentinel-proof-token": proof_token,
-                "openai-sentinel-turnstile-token": turnstile_token,
-                "x-conduit-token": conduit_token,
-            }
-        )
-
+        self.session.headers.update({"oai-client-version": self.data["prod"], "oai-device-id": self.data["device-id"],
+                                     "oai-echo-logs": f"0,{time_1},1,{time_1 + randint(1000, 1200)}",
+                                     "openai-sentinel-chat-requirements-token": self.data["token"],
+                                     "openai-sentinel-proof-token": proof_token, "openai-sentinel-turnstile-token": turnstile_token,
+                                     "x-conduit-token": conduit_token})
         if new:
             new_message: str = input("Prompt: ")
         else:
             new_message: str = message
-
         conversation_data: dict = {
-            "action": "next",
-            "messages": [
-                {
-                    "id": str(uuid4()),
-                    "author": {
-                        "role": "user",
-                    },
-                    "create_time": round(time(), 3),
-                    "content": {
-                        "content_type": "text",
-                        "parts": [
-                            new_message,
-                        ],
-                    },
-                    "metadata": {
-                        "selected_github_repos": [],
-                        "selected_all_github_repos": False,
-                        "serialization_metadata": {
-                            "custom_symbol_offsets": [],
-                        },
-                    },
-                },
-            ],
-            "conversation_id": self.data["conversation_id"],
-            "parent_message_id": self.data["parent_message_id"],
-            "model": "auto",
-            "timezone_offset_min": self.timezone_offset,
-            "timezone": self.ip_info[5],
-            "history_and_training_disabled": True,
-            "conversation_mode": {
-                "kind": "primary_assistant",
-            },
-            "enable_message_followups": True,
-            "system_hints": [],
-            "supports_buffering": True,
-            "supported_encodings": [
-                "v1",
-            ],
-            "client_contextual_info": {
-                "is_dark_mode": True,
-                "time_since_loaded": 17,
-                "page_height": 1219,
-                "page_width": 3440,
-                "pixel_ratio": 1,
-                "screen_height": 1440,
-                "screen_width": 3440,
-            },
-            "paragen_cot_summary_display_override": "allow",
-            "force_parallel_switch": "auto",
+            "action": "next", "messages": [{"id": str(uuid4()), "author": {"role": "user"}, "create_time": round(time(), 3),
+                "content": {"content_type": "text", "parts": [new_message]},
+                "metadata": {"selected_github_repos": [], "selected_all_github_repos": False,
+                              "serialization_metadata": {"custom_symbol_offsets": []}}}],
+            "conversation_id": self.data["conversation_id"], "parent_message_id": self.data["parent_message_id"], "model": "auto",
+            "timezone_offset_min": self.timezone_offset, "timezone": self.ip_info[5], "history_and_training_disabled": True,
+            "conversation_mode": {"kind": "primary_assistant"}, "enable_message_followups": True, "system_hints": [],
+            "supports_buffering": True, "supported_encodings": ["v1"],
+            "client_contextual_info": {"is_dark_mode": True, "time_since_loaded": 17, "page_height": 1219, "page_width": 3440,
+                                       "pixel_ratio": 1, "screen_height": 1440, "screen_width": 3440},
+            "paragen_cot_summary_display_override": "allow", "force_parallel_switch": "auto",
         }
-
-        conversation_request: requests.models.Response = self.session.post(
-            "https://chatgpt.com/backend-anon/f/conversation", json=conversation_data
-        )
+        conversation_request: requests.models.Response = self.session.post("https://chatgpt.com/backend-anon/f/conversation", json=conversation_data)
         self.session.cookies.update(conversation_request.cookies)
-
         if "Unusual activity" in conversation_request.text:
             Log.Error("Your IP got flagged by chatgpt, retry with a new IP")
             exit(conversation_request.status_code)
-
-        self.data["conversation_id"] = Utils.between(
-            conversation_request.text, '"conversation_id": "', '"'
-        )
-        self.data["parent_message_id"] = Utils.between(
-            conversation_request.text, '"message_id": "', '"'
-        )
-
+        self.data["conversation_id"] = Utils.between(conversation_request.text, '"conversation_id": "', '"')
+        self.data["parent_message_id"] = Utils.between(conversation_request.text, '"message_id": "', '"')
         self.response = self._parse_event_stream(conversation_request.text)
 
     def ask_question(self, message: str, image: str = None) -> str:
-
         if not image:
             self.start_conversation(message)
         else:
             self.start_with_image(message, image)
-
         return self.response
